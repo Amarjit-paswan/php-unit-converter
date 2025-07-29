@@ -67,7 +67,7 @@ if($length !== $convert_length){
         </div>
         <div class="my-3">
             <?php 
-            // show error if input length and convert length are same
+            // show error if input length and convert length are same 
             if(is_array($error) && count($error) > 0){
             ?>
             <h4 class="text-danger"><?= $error['error'] ?></h4>
@@ -131,7 +131,7 @@ if($length !== $convert_length){
         <div class="my-3">
             <?php 
             
-            // if result exist
+            // if result exists show value
             if(!empty($convertValue) && $convertValue !== null){
             
             ?>
