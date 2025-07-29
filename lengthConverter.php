@@ -69,7 +69,6 @@ if($length !== $convert_length){
             <?php 
             // show error if input length and convert length are same
             if(is_array($error) && count($error) > 0){
-            
             ?>
             <h4 class="text-danger"><?= $error['error'] ?></h4>
             <?php } ?>
