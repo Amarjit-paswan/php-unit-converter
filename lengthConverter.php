@@ -21,7 +21,7 @@ if(isset($_POST['submit'])){
 
 // Store value given by user
 $length = $_POST['length'];
-$input_value = $_POST['input_value'];
+$input_value = (float) $_POST['input_value'];
 $convert_length = $_POST['Convert_length'];
 
 // Check given unit and convert unit are not same
@@ -113,6 +113,21 @@ if($length !== $convert_length){
                 <input type="submit" value="Submit" name="submit" class="btn btn-warning">
             </div>
         </form>
+
+        
+
+            
+        <div class=" my-2 d-flex justify-content-between gap-3">
+            <div class="col-6 d-grid">
+
+                <a href="weightConverter.php" class="btn btn-danger">Weight Converter</a>
+            </div>
+
+            <div class="col-6 d-grid">
+
+                <a href="temperatureConverter.php" class="btn btn-secondary">Temperature Converter</a>
+            </div>
+        </div>
 
         <div class="my-3">
             <?php 
